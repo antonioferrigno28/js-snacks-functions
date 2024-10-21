@@ -4,9 +4,12 @@ const name = "Mario";
 
 // Dichiara la funzione qui.
 
-function hello(name) {
-  return `Ciao ${name}`;
-}
+//ELABORAZIONE ARROW FUNCTION
+const hello = (name) => `Ciao ${name}`;
+//ELABORAZIONE CLASSICA
+//function hello(name) {
+//  return `Ciao ${name}`;
+//}
 
 // Invoca la funzione qui e stampa il risultato in console
 
