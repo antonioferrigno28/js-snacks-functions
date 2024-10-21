@@ -7,20 +7,34 @@ const wordArrayVowelsLetters = [];
 
 // Dichiara la funzione qui.
 
-function countVowels(word) {
-  //dichiaro un contatore per il numero di vocali che trovo
+//ELABORAZIONE ARROW FUNCTION
 
+const countVowels = (word) => {
   //dichiaro un nuovo array dove sono inserite le vocali esistenti
   const vocali = ["a", "e", "i", "o", "u"];
   //PER i che parte da 0 fino ad arrivare alla lunghezza dell'indice massimo (lunghezza array -1 OPPURE minore di lunghezza array) aumenta i
   for (let i = 0; i < word.length; i++) {
     //SE la parola in posizione i contiene una lettera presente nell'array vocali
     if (vocali.includes(word[i])) {
-      // aggiunge nell'array wordArray la lettera
+      // aggiunge nell'array wordArrayVowelsLetters la lettera
       wordArrayVowelsLetters.push(word[i]);
     }
   }
-}
+};
+
+//ELABORAZIONE CLASSICA
+//function countVowels(word) {
+//dichiaro un nuovo array dove sono inserite le vocali esistenti
+//const vocali = ["a", "e", "i", "o", "u"];
+//PER i che parte da 0 fino ad arrivare alla lunghezza dell'indice massimo (lunghezza array -1 OPPURE minore di lunghezza array) aumenta i
+//for (let i = 0; i < word.length; i++) {
+//SE la parola in posizione i contiene una lettera presente nell'array vocali
+//if (vocali.includes(word[i])) {
+// aggiunge nell'array wordArrayVowelsLetters la lettera
+//wordArrayVowelsLetters.push(word[i]);
+//}
+// }
+//}
 
 // Invoca la funzione qui e stampa il risultato in console
 
