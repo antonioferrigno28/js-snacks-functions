@@ -5,13 +5,24 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 const firstLetterArray = [];
 
 // Dichiara la funzione qui.
-function firstLetter(array) {
+
+//ELABORAZIONE ARROW FUNCTION
+const firstLetter = (array) => {
   //PER i che parte da 0 fino ad arrivare alla lunghezza dell'indice massimo (lunghezza array -1 OPPURE minore di lunghezza array) aumenta i
   for (let i = 0; i < array.length; i++) {
     // aggiunge nell'array firstLetterArray la prima lettera di ogni parola
     firstLetterArray.push(array[i][0]);
   }
-}
+};
+
+//ELABORAZIONE CLASSICA
+// function firstLetter(array) {
+//PER i che parte da 0 fino ad arrivare alla lunghezza dell'indice massimo (lunghezza array -1 OPPURE minore di lunghezza array) aumenta i
+//   for (let i = 0; i < array.length; i++) {
+// aggiunge nell'array firstLetterArray la prima lettera di ogni parola
+//     firstLetterArray.push(array[i][0]);
+//   }
+// }
 
 // Invoca la funzione qui e stampa il risultato in console
 
